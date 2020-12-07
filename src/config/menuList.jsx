@@ -10,23 +10,27 @@ import BarChartIcon from '@material-ui/icons/BarChart';
 import LayersIcon from '@material-ui/icons/Layers';
 import AssignmentIcon from '@material-ui/icons/Assignment';
 
+import { createHashHistory } from "history";
+
+const history = createHashHistory();
+
 export const mainListItems = (
   <div>
-    <ListItem button>
+    <ListItem onClick={() => { history.push('/users') }} button>
       <ListItemIcon>
         <DashboardIcon />
       </ListItemIcon>
-      <ListItemText primary="Dashboard" />
+      <ListItemText primary="Users" />
     </ListItem>
-    <ListItem button>
-      <ListItemIcon>
-        <ShoppingCartIcon />
-      </ListItemIcon>
-      <ListItemText primary="Orders" />
-    </ListItem>
-    <ListItem button>
+    <ListItem onClick={() => { history.push('/contacts') }} button>
       <ListItemIcon>
         <PeopleIcon />
+      </ListItemIcon>
+      <ListItemText primary="Contacts" />
+    </ListItem>
+    <ListItem button>
+      <ListItemIcon>
+      <ShoppingCartIcon />
       </ListItemIcon>
       <ListItemText primary="Customers" />
     </ListItem>

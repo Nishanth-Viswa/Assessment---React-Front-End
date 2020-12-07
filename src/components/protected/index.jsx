@@ -6,6 +6,7 @@ import { Menu, ChevronLeft, Notifications, Search, PowerSettingsNew } from '@mat
 import { mainListItems, secondaryListItems } from '../../config/menuList';
 import { Switch, Route } from 'react-router-dom';
 import Contacts from './contacts/index';
+import Users from './users/index';
 import { createHashHistory } from "history";
 
 const history = createHashHistory();
@@ -229,7 +230,8 @@ class Dashboard extends Component {
           <Container maxWidth="lg" className={classes.container}>
             <Switch>
               <Route path='/contacts' component={Contacts} />
-              <Route path='*' component={Contacts} />
+              <Route path='/users' component={Users} />
+              <Route path='*' component={Users} />
             </Switch>
           </Container>
         </main>

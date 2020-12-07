@@ -50,7 +50,7 @@ export default function SignIn() {
       .then(res => {
         if (res.data.status === 200) {
           localStorage.setItem("token", res.data.token);
-          history.push('/contacts')
+          history.push('/users')
         } else if (res.data.status === 401) {
           setShowError(true);
           setErrorMsg(res.data.message);
@@ -128,7 +128,7 @@ export default function SignIn() {
               </Link>
             </Grid>
             <Grid item>
-              <Link href="#" variant="body2">
+              <Link href="#/sign-up" variant="body2">
                 {"Don't have an account? Sign Up"}
               </Link>
             </Grid>
