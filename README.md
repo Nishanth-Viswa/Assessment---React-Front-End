@@ -10,4 +10,4 @@ cd Assessment---React-Front-End
 
 npm i 
 
-npm start => the apllication will be run on http://localhost:3000
+npm start => the application will be run on http://localhost:3000
