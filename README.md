@@ -1,6 +1,6 @@
 ### Assessment---React-Front-End
 
-# Git Clone commannds
+# Git Clone commands
 
 git clone https://github.com/Nishanth-Viswa/Assessment---React-Front-End.git
 
